@@ -15,6 +15,7 @@
 
 AlgaT is a tutorial application based on JavaFX. It's aim is to explain what greedy programming is through explanations, interactive components and questions. The application is divided is comoposed by an introduction and two main lessons about Prim and Kruskal's algorithms.
 
+![](images/menu.jpg)
 
 ## Structure
 
@@ -34,7 +35,7 @@ AlgaT is a tutorial application based on JavaFX. It's aim is to explain what gre
 
 At the end of each section, the user can find questions and exercises.
 
-![](images/fuel.jpg) ![](images/pause.jpg)
+![](images/esecuzione.jpg)
 [Back To The Top](#No-Gravitar)
 
 
