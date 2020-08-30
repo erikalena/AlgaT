@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kruskal.views.ControllerS1">
+   <children>
+      <Label layoutX="110.0" layoutY="70.0" styleClass="titoli" text="RIPASSO: 14.3 - MINIMO ALBERO DI COPERTURA" textFill="#ff7979" AnchorPane.leftAnchor="121.0" AnchorPane.topAnchor="101.0">
+         <font>
+            <Font name="Cambria Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="PrevB" layoutX="26.0" layoutY="436.0" mnemonicParsing="false" onAction="#PrevB" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="NextB" layoutX="647.0" layoutY="438.0" mnemonicParsing="false" onAction="#NextB" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0" />
+      <Label layoutX="184.0" layoutY="115.0" prefHeight="30.0" prefWidth="212.0" styleClass="testi" text="Minimum Spanning Tree" textFill="WHITE" AnchorPane.bottomAnchor="570.0" AnchorPane.leftAnchor="121.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="Cambria" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="172.0" prefHeight="133.0" prefWidth="527.0" styleClass="testi" text="Dato un grafo non orientato e connesso G=(V, E), con pesi &#10;w(u, v) non negativi sugli archi, un minimo albero di copertura &#10;è quell'albero G'=(V, T) per G che possiede tutti i nodi di V, ma &#10;solo n-1 degli m archi in E. Inoltre, la somma dei pesi degli archi&#10;deve essere la più piccola possibile (minimo albero)." textFill="WHITE" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="ES" layoutX="154.0" layoutY="324.0" mnemonicParsing="false" onAction="#ApriEsercizio" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="CONTROLLA SE HAI CAPITO" />
+      <AnchorPane layoutX="651.0" layoutY="143.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="311.0">
+         <children>
+            <Line endX="10.666671752929688" endY="-17.800010681152344" layoutX="122.0" layoutY="125.0" startX="-7.733314514160156" startY="6.4666748046875" stroke="WHITE" />
+            <Line endX="10.133346557617188" endY="-17.800010681152344" layoutX="122.0" layoutY="89.0" startX="-8.800010681152344" startY="-42.59999465942383" stroke="WHITE" />
+            <Line endX="31.600021362304688" endY="-14.73333740234375" layoutX="172.0" layoutY="59.0" startX="-14.0" startY="15.400001525878906" stroke="WHITE" />
+            <Line endX="13.266677856445312" endY="26.26666259765625" layoutX="189.0" layoutY="106.0" startX="-27.266677856445312" startY="-5.73333740234375" stroke="WHITE" />
+            <Line endX="48.0" endY="-14.0" layoutX="235.0" layoutY="126.0" startX="8.0" startY="22.0" stroke="WHITE" />
+            <Line endX="12.0" endY="24.0" layoutX="271.0" layoutY="42.0" startX="-28.0" startY="-13.0" stroke="WHITE" />
+            <Line endX="38.0" endY="23.0" layoutX="38.0" layoutY="125.0" startX="-11.0" startY="-12.0" stroke="WHITE" />
+            <Line endX="26.0" endY="-23.0" fill="#ff7979" layoutX="50.0" layoutY="52.0" startX="-23.0" startY="15.0" stroke="WHITE" />
+            <Circle fill="#cbe6ff" layoutX="283.0" layoutY="89.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#cbe6ff" layoutX="220.0" layoutY="29.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#cbe6ff" layoutX="145.0" layoutY="89.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#cbe6ff" layoutX="99.0" layoutY="29.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#cbe6ff" layoutX="220.0" layoutY="148.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#cbe6ff" layoutX="99.0" layoutY="148.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fill="#cbe6ff" layoutX="27.0" layoutY="90.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+            <Label layoutX="21.0" layoutY="75.0" prefHeight="25.0" prefWidth="11.0" text="A">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="135.0" prefHeight="4.0" prefWidth="1.0" text="B">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="14.0" text="C" AnchorPane.leftAnchor="93.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="15.0" prefHeight="3.0" prefWidth="0.0" text="F">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="215.0" layoutY="135.0" text="E">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="138.0" layoutY="76.0" text="D">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="278.0" layoutY="76.0" text="G">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endY="73.0" layoutX="99.0" layoutY="52.0" startX="7.62939453125E-6" stroke="WHITE" />
+            <Line endX="53.0" layoutX="144.0" layoutY="29.0" startX="-22.0" stroke="WHITE" />
+            <Line endX="41.0" endY="13.0" layoutX="156.0" layoutY="135.0" startX="-34.0" startY="13.0" stroke="WHITE" />
+            <Line endX="44.999969482421875" endY="-2.0" layoutX="215.0" layoutY="91.0" startX="-47.0" startY="-2.0" stroke="WHITE" />
+            <Label layoutX="41.0" layoutY="31.0" text="6" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="123.0" text="9" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="75.0" text="11" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="39.0" text="2" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="9.0" text="18" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="114.0" text="1" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="184.0" layoutY="101.0" text="13" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="143.0" text="20" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="267.0" layoutY="120.0" text="3" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="68.0" text="15" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="39.0" text="28" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="265.0" layoutY="30.0" text="25" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Esercizio" layoutX="191.0" layoutY="383.0" prefHeight="292.0" prefWidth="702.0" visible="false" AnchorPane.topAnchor="383.0">
+         <children>
+            <Label layoutX="84.0" layoutY="157.0" styleClass="titoli" text="QUALE DELLE DUE È LA SOLUZIONE MIGLIORE?" textFill="WHITE" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="Cambria Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="Opt1" layoutX="176.0" layoutY="242.0" mnemonicParsing="false" onAction="#WrongOpt" styleClass="borderButton" stylesheets="@../../stylesheets/application.css" text="1" AnchorPane.topAnchor="242.0" />
+            <Button fx:id="Opt2" layoutX="500.0" layoutY="367.0" mnemonicParsing="false" onAction="#RightOpt" styleClass="borderButton" text="2" AnchorPane.topAnchor="242.0" />
+            <Label fx:id="Risposta" disable="true" layoutX="310.0" layoutY="248.0" opacity="0.0" prefHeight="23.0" prefWidth="199.0" styleClass="testi" textFill="WHITE" AnchorPane.leftAnchor="270.0">
+               <font>
+                  <Font name="Cambria Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="356.0" layoutY="62.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="311.0" AnchorPane.bottomAnchor="51.0">
+               <children>
+                  <Line endX="10.666671752929688" endY="-17.800010681152344" layoutX="122.0" layoutY="125.0" startX="-7.733314514160156" startY="6.4666748046875" stroke="WHITE" />
+                  <Line endX="10.133346557617188" endY="-17.800010681152344" layoutX="122.0" layoutY="89.0" startX="-8.800010681152344" startY="-42.59999465942383" stroke="WHITE" />
+                  <Line endX="13.266677856445312" endY="26.26666259765625" layoutX="189.0" layoutY="106.0" startX="-27.266677856445312" startY="-5.73333740234375" stroke="WHITE" />
+                  <Line endX="48.0" endY="-14.0" layoutX="235.0" layoutY="126.0" startX="8.0" startY="22.0" stroke="WHITE" />
+                  <Line endX="26.0" endY="-23.0" fill="#ff7979" layoutX="50.0" layoutY="52.0" startX="-23.0" startY="15.0" stroke="WHITE" />
+                  <Circle fill="#cbe6ff" layoutX="283.0" layoutY="89.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="220.0" layoutY="29.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="145.0" layoutY="89.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="99.0" layoutY="29.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="220.0" layoutY="148.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="99.0" layoutY="148.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="27.0" layoutY="90.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label layoutX="21.0" layoutY="75.0" prefHeight="25.0" prefWidth="11.0" text="A">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="135.0" prefHeight="4.0" prefWidth="1.0" text="B">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="14.0" text="C">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="15.0" prefHeight="3.0" prefWidth="0.0" text="F">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="135.0" text="E">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="138.0" layoutY="76.0" text="D">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="76.0" text="G">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="53.0" layoutX="144.0" layoutY="29.0" startX="-22.0" stroke="WHITE" />
+                  <Label layoutX="41.0" layoutY="31.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="123.0" layoutY="39.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="149.0" layoutY="9.0" text="18" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="123.0" layoutY="114.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="184.0" layoutY="101.0" text="13" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="267.0" layoutY="120.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="18.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="311.0" AnchorPane.bottomAnchor="51.0">
+               <children>
+                  <Line endX="10.666671752929688" endY="-17.800010681152344" layoutX="122.0" layoutY="125.0" startX="-7.733314514160156" startY="6.4666748046875" stroke="WHITE" />
+                  <Line endX="31.600021362304688" endY="-14.73333740234375" layoutX="172.0" layoutY="59.0" startX="-14.0" startY="15.400001525878906" stroke="WHITE" />
+                  <Line endX="38.0" endY="23.0" layoutX="38.0" layoutY="125.0" startX="-11.0" startY="-12.0" stroke="WHITE" />
+                  <Line endX="26.0" endY="-23.0" fill="#ff7979" layoutX="50.0" layoutY="52.0" startX="-23.0" startY="15.0" stroke="WHITE" />
+                  <Circle fill="#cbe6ff" layoutX="283.0" layoutY="89.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="220.0" layoutY="29.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="145.0" layoutY="89.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="99.0" layoutY="29.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="220.0" layoutY="148.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="99.0" layoutY="148.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#cbe6ff" layoutX="27.0" layoutY="90.0" radius="23.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label layoutX="21.0" layoutY="75.0" prefHeight="25.0" prefWidth="11.0" text="A">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="135.0" prefHeight="4.0" prefWidth="1.0" text="B">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="94.0" layoutY="14.0" text="C">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="15.0" prefHeight="3.0" prefWidth="0.0" text="F">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="135.0" text="E">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="138.0" layoutY="76.0" text="D">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="76.0" text="G">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="41.0" endY="13.0" layoutX="156.0" layoutY="135.0" startX="-34.0" startY="13.0" stroke="WHITE" />
+                  <Line endX="44.999969482421875" endY="-2.0" layoutX="215.0" layoutY="91.0" startX="-47.0" startY="-2.0" stroke="WHITE" />
+                  <Label layoutX="41.0" layoutY="31.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="123.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="123.0" layoutY="114.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="145.0" layoutY="143.0" text="20" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="212.0" layoutY="68.0" text="15" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="165.0" layoutY="39.0" text="28" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

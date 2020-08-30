@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prim.views.eserciziController">
+   <children>
+      <VBox layoutX="170.0" layoutY="71.0" prefHeight="549.0" prefWidth="710.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <Label styleClass="titoli" text="ESERCIZI" textFill="#f27e7e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Text fill="#eeeeee" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Qual è la complessità dell'algoritmo di Prim se invece di utilizzare una realizzazione della coda con priorità basata su heap binario, si utilizza un heap di Fibonacci (capitolo 11,5) ?&#10;(Si consideri un grafo T di n nodi ed m archi)" wrappingWidth="709.75439453125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Text>
+            <RadioButton fx:id="rb1" mnemonicParsing="false" text="O(1)" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb2" mnemonicParsing="false" text="O(m + n*log n)" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb3" mnemonicParsing="false" text="O(n^2)" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rb4" mnemonicParsing="false" text="O(n*log n)" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </RadioButton>
+            <Button fx:id="done" mnemonicParsing="false" onAction="#verifica" styleClass="borderButton" stylesheets="@../../stylesheets/application.css" text="OK">
+               <VBox.margin>
+                  <Insets left="330.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="risposta" editable="false" prefHeight="47.0" prefWidth="150.0" styleClass="textAreaq" stylesheets="@../../stylesheets/application.css">
+            
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="25.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="40.0" layoutY="648.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="next" disable="true" layoutX="972.0" layoutY="656.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0" />
+   </children>
+</AnchorPane>

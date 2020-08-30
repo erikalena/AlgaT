@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kruskal.views.CKruskal_7811">
+   <children>
+      <BorderPane layoutX="1.0" layoutY="90.0" prefHeight="647.0" prefWidth="1080.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="649.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="105.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="In 'MINIMO ALBERO DI COPERTURA' il termine minimo sta per:">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font></Text>
+                  <VBox layoutX="121.0" layoutY="185.0" prefHeight="240.0" prefWidth="322.0" spacing="45.0">
+                     <children>
+                        <RadioButton fx:id="WrongOpt1" mnemonicParsing="false" styleClass="testi" text="Minimo numero di archi" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="RightOpt" mnemonicParsing="false" styleClass="testi" text="Somma minima dei pesi degli archi" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="WrongOpt2" mnemonicParsing="false" styleClass="testi" text="Albero più piccolo" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="WrongOpt3" mnemonicParsing="false" styleClass="testi" text="Nessuna delle precedenti" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                  </VBox>
+                  <Button fx:id="Es2" layoutX="202.0" layoutY="477.0" mnemonicParsing="false" onAction="#GetAnswer" styleClass="buttonlez" text="FATTO" />
+                  <TextArea fx:id="Risultato" layoutX="301.0" layoutY="464.0" prefHeight="58.0" prefWidth="227.0" styleClass="textAreaq" stylesheets="@../../stylesheets/application.css" />
+                  <Label layoutX="121.0" layoutY="101.0" styleClass="titoli" text="DOMANDE:" />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+      <Button fx:id="PrevB" layoutX="76.0" layoutY="757.0" mnemonicParsing="false" onAction="#PrevB" styleClass="buttonlez" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="NextB" disable="true" layoutX="245.0" layoutY="767.0" mnemonicParsing="false" onAction="#NextB" styleClass="buttonlez" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prim.views.firstController">
+   <children>
+      <VBox layoutX="121.0" layoutY="69.0" prefHeight="396.0" prefWidth="353.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Definizioni base necessarie alla comprensione: &#10;(spunta quelle che già conosci o controllane il significato e vai avanti)&#10;" wrappingWidth="592.92138671875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="cbox" prefHeight="31.0" prefWidth="308.0" />
+                  <Button fx:id="controlla" mnemonicParsing="false" onAction="#tocheck" styleClass="borderButton" stylesheets="@../../stylesheets/application.css" text="CONTROLLA">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="45.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <CheckBox fx:id="check1" mnemonicParsing="false" onAction="#verify" prefHeight="26.0" prefWidth="378.0" text="Grafo non orientato e connesso" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="45.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="check3" mnemonicParsing="false" onAction="#verify" text="Taglio" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check2" mnemonicParsing="false" onAction="#verify" prefHeight="21.0" prefWidth="232.0" text="Albero di copertura " textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check5" mnemonicParsing="false" onAction="#verify" text="Arco Sicuro" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="check4" mnemonicParsing="false" onAction="#verify" text="Albero di copertura di peso minimo" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="next" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#goNext" styleClass="borderButton" stylesheets="@../../stylesheets/application.css" text="FATTO">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="350.0" top="30.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="34.0" layoutY="682.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

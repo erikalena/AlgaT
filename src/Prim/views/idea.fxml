@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prim.views.secondController">
+   <children>
+      <VBox layoutX="124.0" layoutY="98.0" prefHeight="319.0" prefWidth="838.0">
+         <children>
+            <Label styleClass="titoli" text="IDEA" textFill="#c37878">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text fill="#f2eeee" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt; L'algoritmo di Prim procede mantenendo in A un singolo Albero&#10;&#10;&#10;&gt; L'albero parte da un vertice arbitrario ( r ) e cresce fino a ricoprire tutti quanti i vertici&#10;&#10;&#10;&gt; Ad ogni passo viene aggiunto un arco leggero che collega un vertice in VA (insieme di nodi raggiunti dall'iniseme  di archi in A) con unvertice di V-VA " wrappingWidth="837.91162109375">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="30.0" layoutY="655.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="next" layoutX="985.0" layoutY="655.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

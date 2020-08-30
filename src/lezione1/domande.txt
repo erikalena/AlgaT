@@ -1,0 +1,5 @@
+Il greedy trova sempre la soluzione ottimale. |V:F|F
+Cosa vuol dire greedy? |Stanco:Veloce:Goloso|Goloso
+Come funziona il greedy? |Fa le scelte più aggressive:Sceglie sempre il minimo:Le scelte sono casuali|Fa le scelte più aggressive
+Quale di queste non è una proprietà del greedy? |Scelta greedy:Analisi di alternative:Sottostruttura ottima|Analisi di alternative
+Indicare la soluzione greedy per rappresentare la somma 74 con monete da 50, 20, 10 e 2 (Cambia solo il numero prima dei valori).|1x50, 1x20, 0x10, 2x2|1x50, 1x20, 0x10, 2x2

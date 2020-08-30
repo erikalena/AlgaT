@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prim.views.firstController">
+   <children>
+      <VBox layoutX="87.0" layoutY="85.0" prefHeight="429.0" prefWidth="737.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="100.0" styleClass="titoli" stylesheets="@../../stylesheets/application.css" text="PROBLEMA" textFill="#d37373">
+               <VBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Text fill="#f27e7e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Dato un grafo pesato, determinare come interconnettere tutti i suoi nodi minimizzando il costo del peso associato ai suoi archi. Ovvero determinare un albero di copertura di peso minimo per il grafo dato." wrappingWidth="744.000006198883">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+            </Text>
+            <Label styleClass="titoli" stylesheets="@../../stylesheets/application.css" text="DEFINIZIONE DEL PROBLEMA" textFill="#d37373">
+               <VBox.margin>
+                  <Insets left="30.0" top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Text fill="#f27e7e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="&gt; G (V, E) grafo non orientato e connesso  &#10;&#10;&gt; w: V x V -&gt;R : funzione di peso (rappresenta il costo di connessione)&#10;   se [u, v] ∈ E allora w(u, v) è il peso dell'arco [u, v], mentre se [u, v] ∉  E &#10;   allora w(u, v) =+∞ perchè tale peso non è ancora stato determinato&#10;&#10;&gt; G non è orientato, pertanto w (u, v) = w (v, u)">
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="37.0" layoutY="654.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="next" layoutX="973.0" layoutY="654.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="image" fitHeight="205.0" fitWidth="306.0" layoutX="691.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true" />
+      <Group layoutX="111.0" layoutY="554.0">
+         <children>
+            <Text fill="#f27e7e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Algoritmi Greedy (&quot;golosi&quot;) per gli alberi di coprtura minima sono: &#10;Algoritmo di Prim [1957] e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="kruskal" layoutX="217.0" layoutY="6.0" onMouseClicked="#gotoKruskal" text="Algoritmo di Kruskal [1956]" textFill="#5dbfc9">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intro_KP.views.introController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label styleClass="titoli" text="COROLLARIO" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="90.0" top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="   &gt; Sia G = (V, E) un grafo non orientato e connesso&#10;&#10;   &gt; Sia w : V × V → R (insieme dei pesi)&#10;&#10;   &gt; Sia A ⊆ E un sottoinsieme contenuto in un qualche albero di copertura minimo per G&#10;&#10;   &gt; Sia C una componente connessa (un albero) nella foresta G' = (V, A)&#10;&#10;   &gt; Sia [u, v] un arco leggero che connette C a qualche altra componente in G'&#10;&#10;Allora l’arco [u, v] è SICURO per A" wrappingWidth="975.4140625">
+               <VBox.margin>
+                  <Insets left="90.0" top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="30.0" layoutY="591.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="menu" layoutX="888.0" layoutY="610.0" mnemonicParsing="false" onAction="#gotoMenu" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="MENU" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0" />
+   </children>
+</AnchorPane>

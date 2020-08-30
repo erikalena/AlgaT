@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prim.views.firstController">
+   <children>
+      <Button fx:id="next" layoutX="893.0" layoutY="655.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="45.0" layoutY="633.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <VBox layoutX="255.0" layoutY="87.0" prefHeight="553.0" prefWidth="541.0">
+         <children>
+            <Group>
+               <children>
+                  <StackPane fx:id="sp5" layoutX="349.0" layoutY="333.0" onMouseClicked="#gotoCode" onMouseEntered="#toFill" onMouseExited="#unfill">
+                     <children>
+                        <Circle fill="#c4e5f2" radius="70.0" stroke="#149da4" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.5" />
+                        <Label text="Pseudo-codice" textFill="#474747">
+                           <font>
+                              <Font name="Segoe UI Historic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="sp1" layoutX="158.0" layoutY="49.0" onMouseClicked="#gotoIdea" onMouseEntered="#toFill" onMouseExited="#unfill">
+                     <children>
+                        <Circle fill="#c4e5f2" radius="70.0" stroke="#149da4" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.5" />
+                        <Label prefHeight="24.0" prefWidth="33.0" text="Idea" textFill="#474747">
+                           <font>
+                              <Font name="Segoe UI Historic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="sp3" layoutX="530.0" layoutY="49.0" onMouseClicked="#gotoImplementation" onMouseEntered="#toFill" onMouseExited="#unfill">
+                     <children>
+                        <Circle fill="#c4e5f2" radius="70.0" stroke="#149da4" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.5" />
+                        <Label prefHeight="38.0" prefWidth="125.0" text="Implementazione" textFill="#474747">
+                           <font>
+                              <Font name="Segoe UI Historic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="sp4" layoutX="530.0" layoutY="239.0" onMouseClicked="#gotoEfficiency" onMouseEntered="#toFill" onMouseExited="#unfill">
+                     <children>
+                        <Circle fill="#c4e5f2" radius="70.0" stroke="#149da4" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.5" />
+                        <Label text="Efficienza" textFill="#474747">
+                           <font>
+                              <Font name="Segoe UI Historic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="sp2" layoutX="349.0" layoutY="-40.0" onMouseClicked="#gotoCorrect" onMouseEntered="#toFill" onMouseExited="#unfill">
+                     <children>
+                        <Circle fill="#c4e5f2" radius="70.0" stroke="#149da4" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.5" />
+                        <Label text="Correttezza" textFill="#474747">
+                           <font>
+                              <Font name="Segoe UI Historic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="sp6" layoutX="158.0" layoutY="239.0" onMouseClicked="#gotoEsercizi" onMouseEntered="#toFill" onMouseExited="#unfill">
+                     <children>
+                        <Circle fill="#c4e5f2" radius="70.0" stroke="#149da4" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="2.5" />
+                        <Label text="Esercizi" textFill="#474747">
+                           <font>
+                              <Font name="Segoe UI Historic" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Group>
+            <Button fx:id="alert" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#information" prefHeight="33.0" prefWidth="112.0" styleClass="borderButton" stylesheets="@../../stylesheets/application.css" text="NOTA BENE" textAlignment="CENTER" textFill="#dd7017">
+               <VBox.margin>
+                  <Insets left="420.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="112.0" layoutY="59.0" prefHeight="21.0" prefWidth="68.0" styleClass="titoli" stylesheets="@../../stylesheets/application.css" text="MENU" />
+   </children>
+</AnchorPane>

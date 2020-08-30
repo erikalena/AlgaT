@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Kruskal.views.CKruskal_456">
+   <children>
+      <BorderPane layoutX="359.0" layoutY="191.0" prefHeight="659.0" prefWidth="1080.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="101.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Il maggior sforzo computazionale dell'algoritmo di Kruskal è dato dall'ordinamento iniziale e dalla verifica&#10;che l'aggiunta di un nuovo arco non provochi la formazione di un circuito.&#10;&#10;Dato un grafo T con m archi ed n nodi:&#10;&#10;⥤ L'ordinamento ha costo O(m logn) tempo, dato che logm ≤ 2logn&#10;&#10;⥤ Utilizzando una struttura merge-find MFSET, la verifica che un arco appartenga a due componenti distinte (ed anche il suo eventuale inserimento in T) richiede tempo ammortizzato costante O(1) poichè si utilizzano le operazioni find() e merge().&#10;&#10;Inoltre, poiché il ciclo for è ripetuto m volte, la complessità dell'algoritmo risulta essere O(m logn)" wrappingWidth="868.2301025390625">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="costoK" fitHeight="184.0" fitWidth="472.0" layoutX="298.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="121.0" layoutY="101.0" styleClass="titoli" text="EFFICIENZA" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <Button fx:id="PrevB" layoutX="70.0" layoutY="725.0" mnemonicParsing="false" onAction="#PrevB" styleClass="buttonlez" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="NextB" layoutX="151.0" layoutY="737.0" mnemonicParsing="false" onAction="#NextB" styleClass="buttonlez" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0" />
+   </children>
+</AnchorPane>

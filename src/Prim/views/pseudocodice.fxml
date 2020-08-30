@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prim.views.secondController">
+   <children>
+      <Button fx:id="back" layoutX="14.0" layoutY="709.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="next" alignment="BOTTOM_RIGHT" layoutX="958.0" layoutY="728.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <VBox layoutX="47.0" layoutY="82.0" prefHeight="472.0" prefWidth="1075.0" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="82.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="163.0" styleClass="titoli" text="PSEUDOCODICE" textFill="#f27e7e">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="374.0" prefWidth="1080.0">
+               <children>
+                  <ImageView fx:id="immagine" fitHeight="445.0" fitWidth="567.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Image/prim.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text fill="#eeeeee" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Tutti i nodi vengono inseriti nella coda con priorità +∞, tranne il nodo radice che ha priorità 0.  La priorità del nodo u corrisponde al peso minimo di un arco che raggiunge u a partire da un arco compreso in A, mentre pos[u] è la posizione che u occupa nello heap. Quando un nodo viene estratto dalla coda, [p[u], u] rappresenta l'arco con peso minore fra quelli che escono dall'albero.  &#10;Ogni volta che si trova un arco di costo inferiore che colleghi un nodo non ancora inserito in A, la priorità viene aggiornata così come il vettore dei padri.&#10;" wrappingWidth="377.623046875">
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

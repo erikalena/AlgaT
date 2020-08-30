@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="anchorp" stylesheets="@../../stylesheets/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="intro_KP.views.introController">
+   <children>
+      <VBox layoutY="14.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label styleClass="titoli" text="DIMOSTRAZIONE" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="90.0" top="70.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text="Sia T un albero di copertura minimo che contiene A. &#10;Si possono verificare due casi:&#10;&#10;      - (u, v) ∈ T : allora (u, v) è sicuro per A &#10;&#10;      - (u,v) ∉ T : trasformiamo T in un albero T' contenente (u, v) e dimostriamo che T' è un albero di copertura minimo" wrappingWidth="952.8203125">
+               <VBox.margin>
+                  <Insets left="90.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="change" mnemonicParsing="false" onAction="#trasforma" styleClass="borderButton" stylesheets="@../../stylesheets/application.css" text="TRASFORMA">
+               <VBox.margin>
+                  <Insets left="200.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="179.0" prefWidth="495.0">
+                     <children>
+                        <Line endX="100.0" layoutX="258.0" layoutY="59.0" startX="-100.0" stroke="#e40b0b" strokeWidth="3.0" />
+                        <Line endX="100.0" layoutX="271.0" layoutY="149.0" startX="-113.0" stroke="#e40b0b" strokeWidth="3.0" />
+                        <Line fx:id="line1" endX="100.0" layoutX="40.0" layoutY="134.0" startX="100.0" startY="-68.0" stroke="#e40b0b" strokeWidth="3.0" />
+                        <Line fx:id="line2" endX="100.0" layoutX="271.0" layoutY="136.0" startX="100.0" startY="-73.0" stroke="#8c8f9a" strokeWidth="3.0" />
+                        <Circle fill="#b7e0ed" layoutX="140.0" layoutY="149.0" radius="30.0" stroke="#0c2343" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Circle fill="#b7e0ed" layoutX="258.0" layoutY="149.0" radius="30.0" stroke="#0c2343" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Circle fill="#b7e0ed" layoutX="371.0" layoutY="59.0" radius="30.0" stroke="#0c2343" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Circle fill="#b7e0ed" layoutX="140.0" layoutY="59.0" radius="30.0" stroke="#0c2343" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Circle fill="#b7e0ed" layoutX="258.0" layoutY="59.0" radius="30.0" stroke="#0c2343" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Circle fill="#b7e0ed" layoutX="371.0" layoutY="149.0" radius="30.0" stroke="#0c2343" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Label layoutX="135.0" layoutY="48.0" text="X">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="135.0" layoutY="138.0" text="Y">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="365.0" layoutY="48.0" text="U">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="367.0" layoutY="139.0" text="V">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Line endX="135.0" layoutX="271.0" layoutY="104.0" startX="-177.0" stroke="WHITE" />
+                        <Label layoutX="59.0" layoutY="79.0" text="taglio" textFill="WHITE" />
+                        <Text fx:id="albero" fill="RED" layoutX="201.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="T">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="testi" text=" &gt; T' = T − {(x, y)} ∪ {(u, v)}&#10;&#10; &gt; T' è un albero di copertura&#10;&#10; &gt; w( T' ) ≤ w( T )&#10;     (perchè w(u, v) ≤ w(x, y), dal momento che (u, v) è un arco leggero)&#10;&#10; &gt; w( T ) ≤ w( T' ) (perchè T minimo)" wrappingWidth="562.49462890625">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="back" layoutX="39.0" layoutY="659.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&lt;&lt;" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+      <Button fx:id="next" layoutX="1008.0" layoutY="675.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../../stylesheets/application.css" text="&gt;&gt;" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0" />
+   </children>
+</AnchorPane>

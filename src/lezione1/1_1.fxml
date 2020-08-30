@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #474747;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lezione1.navController">
+   <children>
+      <Button fx:id="next" layoutX="975.0" layoutY="646.0" mnemonicParsing="false" onAction="#goNext" styleClass="buttonlez" stylesheets="@../stylesheets/application.css" text="&gt;&gt;" textFill="#e79292" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="45.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="42.0" layoutY="38.0" text="Cos' è la strategia greedy?" textFill="#e79292" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Arial Black" size="30.0" />
+         </font>
+      </Label>
+      <TextFlow layoutX="75.0" layoutY="173.0" lineSpacing="2.0" prefHeight="188.0" prefWidth="930.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="La strategia dell' ingordo, o greedy, è un algoritmo che permette di costruire una soluzione completa tramite una sequenza di scelte &quot;ottime&quot;.&#10;&#10;La scelta dipende dal problema che si sta affrontando!&#10;&#10;Il principio del greedy è semplice:&#10;" wrappingWidth="965.14453125">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Button id="BLEZ" layoutX="195.0" layoutY="378.0" mnemonicParsing="false" stylesheets="@../stylesheets/application.css" text="&quot;qual è la miglior cosa da fare a questo punto?&quot;">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </Button>
+      <TextFlow layoutX="75.0" layoutY="478.0" lineSpacing="2.0" prefHeight="78.0" prefWidth="930.0" textAlignment="JUSTIFY">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Detto con parole diverse, la scelta migliore viene valutata con un criterio di &#10;&quot; appetibilità&quot; (da questo il nome, ingordo).">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <Button layoutX="32.0" layoutY="656.0" mnemonicParsing="false" onAction="#goToMenu" styleClass="buttonlez" stylesheets="@../stylesheets/application.css" text="Menu" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="45.0" />
+   </children>
+</AnchorPane>
