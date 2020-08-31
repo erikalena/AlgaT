@@ -43,7 +43,7 @@ At the end of each section, the user can find questions and exercises.
 
 ## Installation
 
-To run the application, you can just download the '.jar' file and open it in your JVM, or if you prefer, tou can download source code and compile it.
+To run the application, you can just download the '.jar' file and open it in your JVM, or if you prefer, you can download source code and compile it.
 
 
 ## Author Info
